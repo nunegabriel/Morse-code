@@ -53,3 +53,12 @@ def decode_word(word)
   end
   result
 end
+
+# decode sentence
+def get_sentence(code_sentence)
+  morse_sentence = code_sentence.split('  ')
+  sentence = ''
+  morse_sentence.each { |word| sentence += "#{decode_word(word)} " }
+  sentence
+end
+puts get_sentence('-- -.--   -. .- -- .')
