@@ -43,4 +43,3 @@ def decode_char(character)
 end
 
 puts decode_char('.-')
-
